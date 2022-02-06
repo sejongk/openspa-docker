@@ -1,0 +1,6 @@
+[submodule "openspa"]
+	path = openspa
+	url = https://github.com/greenstatic/openspa
+[submodule "openspa-extension-scripts"]
+	path = openspa-extension-scripts
+	url = https://github.com/greenstatic/openspa-extension-scripts.git

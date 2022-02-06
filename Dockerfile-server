@@ -1,0 +1,18 @@
+FROM ubuntu:20.04
+
+USER root
+WORKDIR /openspa
+
+RUN apt update \
+    && apt install curl iptables python3 -y --no-install-recommends --no-install-suggests 
+
+COPY docker-entrypoint-server.sh docker-entrypoint.sh
+COPY openspa-server .
+COPY es/ es/
+COPY server-config.yaml config.yaml
+COPY setup-iptables.sh .
+
+ENTRYPOINT ["./docker-entrypoint.sh"]
+
+EXPOSE 22211
+
