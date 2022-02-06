@@ -2,6 +2,11 @@
 * Git repo of the unofficial docker image for [OpenSPA](https://github.com/greenstatic/openspa)
 * OpenSPA images help you to follow [OpenSPA official tutorial](https://github.com/greenstatic/openspa/blob/master/docs/OpenSPA%20Server%20Installation%20with%20iptables.md) easily
 
+# Pull from Docker hub
+    ```bash
+    docker pull sepaper/openspa-server
+    docker pull sepaper/openspa-client
+    ```
 # How to build
 1. Clone openspa-docker repo and initialize submodules
     ```bash
