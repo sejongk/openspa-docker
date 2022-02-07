@@ -14,6 +14,7 @@
     git submodule init --update
     
     cd openspa
+    git checkout master # dev branch is under development
     go mod init github.com/greenstatic/openspa
     go mod tidy
     ```
