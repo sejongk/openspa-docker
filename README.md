@@ -2,7 +2,7 @@
 * Git repo of the unofficial docker image for [OpenSPA](https://github.com/greenstatic/openspa)
 * OpenSPA images help you to follow [OpenSPA official tutorial](https://github.com/greenstatic/openspa/blob/master/docs/OpenSPA%20Server%20Installation%20with%20iptables.md) easily
 
-# Pull from Docker hub
+# How  to pull from Docker hub
     docker pull sepaper/openspa-server
     docker pull sepaper/openspa-client
 # How to build
@@ -37,6 +37,7 @@
 # How to run for the tutorial
 1. Run echo ipv4 server in host
     ```bash
+    # In host
     docker run --name echoip -d greenstatic/echo-ip # this server returns an echo response like {"success":true,"ip":"172.17.0.3","isIpv6":false,"datetime":"2022-02-02T08:23:15Z","ipDetails":{"remoteIP":"172.17.0.3","forwardedForIP":""},"service":"echo-ip","version":"1.2.0","srcUrl":"https://github.com/greenstatic/echo-ip"}
     ```
 2. Check the built images
